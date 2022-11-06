@@ -1,0 +1,40 @@
+.stats {
+  background-color: var(--main-bg-color);
+  padding-top: 51px;
+  padding-bottom: 53px;
+}
+
+.stats .wrapper {
+  grid-template-columns: 380px 1fr auto 1fr;
+  align-items: center;
+}
+
+.stats .wrapper .title {
+  color: var(--main-yellow-color);
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.stats .wrapper .item .content {
+  display: inline-block;
+  text-align: left;
+}
+
+.stats .wrapper .item .count {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.stats .wrapper .item .stat {
+  color: #a1a1a1;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.stats .wrapper .item:last-child {
+  text-align: right;
+}

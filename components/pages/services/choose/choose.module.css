@@ -1,0 +1,181 @@
+.back {
+    padding-top: 350px;
+    background-color: #f3f3f5;
+    padding-bottom: 90px;
+}
+
+.choose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #1B1B1B;
+}
+
+.left {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130%;
+    color: #424242;
+}
+
+.right {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #424242;
+}
+
+.all-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 54px;
+    padding-bottom: 60px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    padding: 30px 25px;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    height: 693px;
+    width: 30%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ed {
+    margin: 0;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 141.4%;
+    color: #1B1B1B;
+}
+
+.seconded {
+    margin: 0;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.4%;
+    color: #1B1B1B;
+}
+
+.description {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #424242;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+.service {
+    display: flex;
+    align-items: flex-start;
+}
+
+.plus {
+    margin: 0;
+}
+
+.space {
+    min-width: 30px;
+    margin-right: 10px;
+}
+
+.price {
+    position: absolute;
+    bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 141.4%;
+    color: #1B1B1B;
+}
+
+.time {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 141.4%;
+    color: #424242;
+}
+
+.btn {
+    bottom: 20px;
+    position: absolute;
+    background: #1B1B1B;
+    border: 1px solid #1B1B1B;
+    border-radius: 13px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #F3F3F5;
+    width: 300px;
+    height: 45px;
+    display: block;
+}
+
+.line {
+    width: 300px;
+    height: 1px;
+    position: absolute;
+    background: #D5D5D5;
+    bottom: 173px;
+}
+
+.lne {
+    width: 300px;
+    height: 1px;
+    background: #D5D5D5;
+    margin-bottom: 20px;
+}
+
+.price-one {
+    position: absolute;
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 141.4%;
+    color: #1B1B1B;
+}

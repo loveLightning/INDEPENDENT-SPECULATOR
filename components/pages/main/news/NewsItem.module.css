@@ -1,0 +1,90 @@
+.itemWrapper {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 391px;
+}
+
+.itemWrapper .item {
+  width: 335px;
+  height: 391px;
+  border-radius: 27px;
+  transition: all 1s ease;
+  padding: 27px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageBlock {
+  width: 100%;
+  height: 211px;
+  border-radius: 21.75px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  transition: all 1s ease;
+}
+
+.activeNewsTab .item {
+  height: 391px;
+  background-color: #1b1b1b;
+  box-shadow: 0 38.0625px 54.375px rgba(0, 0, 0, 0.19);
+}
+
+.item .date {
+  color: #8C8C8C;
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 17px;
+  transition: all 1s ease;
+}
+
+.item .title {
+  color: #4D4D4D;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 17px;
+  max-height: 81px;
+  height: 81px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.item .read a {
+  color: var(--main-bg-color);
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.item .read svg {
+  margin-left: 10px;
+  fill: var(--main-bg-color);
+  transition: all 1s ease;
+}
+
+.activeNewsTab .item .wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.activeNewsTab .item .date {
+  color: #8C8C8C;
+}
+
+.activeNewsTab .item .title {
+  color: #fff;
+}
+
+.activeNewsTab .item .read a {
+  color: var(--main-yellow-color);
+}
+
+.activeNewsTab .item .read svg {
+  fill: var(--main-yellow-color);
+}

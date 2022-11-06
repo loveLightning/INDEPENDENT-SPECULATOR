@@ -1,0 +1,48 @@
+.header {
+  background-color: var(--main-bg-color);
+  height: 100px;
+  display: grid;
+  align-items: center;
+}
+
+.header .wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 86px 1fr auto;
+}
+
+.logo {
+  width: 36px;
+}
+
+.menu ul {
+  padding-left: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.menu ul li a {
+  color: #a4a4a4;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: var(--main-yellow-color);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.controls .btnLogIn {
+  margin-right: 10px;
+}
+
+.controls .search {
+  padding-top: 14px;
+}

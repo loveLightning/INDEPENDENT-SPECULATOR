@@ -1,0 +1,165 @@
+.subscription {
+  background-color: var(--main-bg-color);
+  padding: 105px 0;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 42px;
+}
+
+.description {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: #a7a7a7;
+  max-width: 671px;
+  line-height: 19.5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.controls ul {
+  padding: 0;
+}
+
+.controls ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.controls ul li:last-child {
+  margin-right: 0;
+}
+
+.wrapperInfo {
+  margin-top: 45px;
+  background: #fbfbfd;
+  box-shadow: 0px 10px 60px 3px rgba(40, 40, 40, 0.1);
+  border-radius: 20px;
+  padding: 45px 40px;
+  grid-template-columns: 1fr 305px;
+}
+
+.info {
+  margin-right: 50px;
+}
+
+.info .subscribtionInfo {
+  grid-template-columns: auto 1fr;
+}
+
+.info .subscribtionInfo .wrapperTitle {
+  margin-left: 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: var(--main-bg-color);
+  margin-top: 3px;
+}
+
+.info .subscribtionInfo .wrapperTitle .t1 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.info .subscribtionInfo .wrapperTitle .t2 {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.info .pointsDescription {
+  margin-top: 10px;
+}
+
+.info .pointsDescription .desc {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.info .pointsDescription .list ul li {
+  list-style: none;
+  font-family: 'DM Sans', sans-serif;
+  color: #707070;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.info .pointsDescription .list ul {
+  padding-left: 33px;
+}
+
+.info .pointsDescription .list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.info .pointsDescription .list ul li::before {
+  content: '';
+  position: absolute;
+  background-image: url('/check.svg');
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 11px;
+  left: -33px;
+  top: 5px;
+}
+
+.subscribeControls {
+  background-color: var(--main-bg-color);
+  padding: 25px 45px;
+  border-radius: 20px;
+}
+
+.subscribeControls .price {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.subscribeControls .btn {
+  width: 100%;
+}
+
+.subscribeControls .link {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.subscribeControls .link span {
+  right: initial;
+}
+
+.subscribeControls .link span img {
+  margin-left: 8px;
+}
+
+.subscribeControls .earlyBtn {
+  background-color: #484848;
+  margin-top: 10px;
+}
+
+.question {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.question a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #bec0c6;
+  font-size: 15px;
+  outline: none;
+}

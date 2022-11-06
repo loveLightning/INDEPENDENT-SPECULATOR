@@ -1,0 +1,46 @@
+.link {
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 13px;
+  padding: 13px 25px;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.link.arrow {
+  padding-right: 40px;
+}
+
+.link.arrow span {
+  position: absolute;
+  right: 12px;
+}
+
+.default {
+  background-color: #fff;
+  color: var(--main-bg-color);
+}
+
+.primary {
+  background-color: var(--main-yellow-color);
+  color: var(--main-bg-color);
+}
+
+.dark {
+  background-color: var(--dark-gray-color);
+  color: white;
+}
+
+.ghost {
+  background: transparent;
+}
+
+.ghost.border {
+  border: 1px solid var(--main-bg-color);
+  color: var(--main-bg-color);
+}

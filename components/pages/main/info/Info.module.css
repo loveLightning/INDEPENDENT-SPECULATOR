@@ -1,0 +1,73 @@
+.info {
+  background: url('/main-page-bg.jpg');
+  height: 590px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.infoContainer {
+  height: 100%;
+}
+
+.wrapper {
+  grid-template-columns: 1fr auto;
+  height: 100%;
+  align-items: center;
+}
+
+.name {
+  color: var(--main-yellow-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.description {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.goals {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 30px;
+  max-width: 840px;
+}
+
+.socialNetworks ul {
+  padding-left: 90px;
+  margin: 0;
+}
+
+.socialNetworks ul li {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.socialNetworks ul li:last-child {
+  margin-bottom: 0;
+}
+
+.controls {
+  margin-top: 36px;
+}
+
+.controls .faq {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 37px;
+}
+
+.servicesButton {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px !important;
+}

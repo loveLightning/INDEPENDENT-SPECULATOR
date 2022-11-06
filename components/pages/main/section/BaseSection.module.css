@@ -1,0 +1,30 @@
+.wrapper {
+  grid-template-columns: 1fr;
+  padding: 100px 0;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 15px;
+  color: #8c8c8c;
+}
+
+.wrapperTitle {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  grid-template-columns: 1fr auto;
+}
+
+.wrapperTitle .title {
+  color: var(--main-bg-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wrapperTitle .seeAll {
+  padding: 10px 43px;
+  padding-right: 50px;
+}

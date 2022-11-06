@@ -1,0 +1,157 @@
+.title {
+    margin-top: 233px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    text-align: center;
+}
+
+.desc {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #424242;
+    width: 100%;
+}
+
+.wrap-desc {
+    margin: 0 auto;
+    max-width: 920px;
+}
+
+.btn {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #1B1B1B;
+    background: #F9CC00;
+    border-radius: 13px;
+    height: 45px;
+    width: 190px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 60px auto;
+}
+
+.block {
+    background: #1B1B1B;
+    border-radius: 10px;
+    color: white;
+}
+
+.cols {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 105px;
+    gap: 60px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.number {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 143.9%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 143.9%;
+    margin: 0;
+}
+
+.desc-col {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #A7A7A7;
+}
+
+.knowledge {
+    padding: 40px 95px;
+    background: #F3F3F5;
+    border-radius: 10px;
+    margin-top: 130px;
+}
+
+.here {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1B1B1B;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left {
+    flex-direction: column;
+    width: 15%;
+}
+
+.right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.subtitle {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1B1B1B;
+}
+
+.description {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #424242;
+}
+
+.title-rigth {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #424242;
+}
+
+.separator {
+    margin-top: 30px;
+    height: 1px;
+    background: #D5D5D5;
+    width: 100%;
+}
+
+.link {
+    color: #0964CB;
+}
