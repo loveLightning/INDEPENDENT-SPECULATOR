@@ -7,6 +7,7 @@ import Link from 'next/link';
 import logo from '../../public/logo-small.svg'
 import search from '../../public/search.svg'
 import Image from 'next/image'
+import { NavLink } from '../nav-link/nav-link';
 
 export const GuestHeader = ({ ...props }: GuestHeaderProps): JSX.Element => {
   return (
@@ -21,17 +22,17 @@ export const GuestHeader = ({ ...props }: GuestHeaderProps): JSX.Element => {
             </Link>
           </div>
 
-          <div className={styles.menu}>
+          <nav className={styles.menu}>
             <ul>
               {dataMenu?.map(item => (
                 <li key={item.id}>
-                  <Link href={item.path}>
+                  <NavLink href={item.path}>
                     <a>{item.title}</a>
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
           <div className={styles.controls}>
             <button className={cn('btn', styles.search)}>
               <Image src={search} alt="search" className={styles.logo} />

@@ -1,3 +1,17 @@
+/* import cookWhite from '../../../../public/cook-black.svg'
+import cookBlack from '../../../../public/cook-black.svg'
+
+import arrowWhite from '../../../../public/arrow-white.svg'
+import arrowBlack from '../../../../public/arrow-black.svg'
+
+import documentWhite from '../../../../public/document-white.svg'
+import newsPaper from '../../../../public/newspaper.svg'
+
+import ok from '../../../../public/ok.svg'
+
+import likehite from '../../../../public/like-white.svg'
+import like from '../../../../public/like.svg' */
+
 .back {
     padding-top: 350px;
     background-color: #f3f3f5;
@@ -43,52 +57,126 @@
     gap: 30px;
     margin-top: 54px;
     padding-bottom: 60px;
+
 }
 
 .card {
     position: relative;
-    display: flex;
-    flex-direction: column;
     background-color: white;
-    align-items: flex-start;
     padding: 30px 25px;
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
-    height: 693px;
+    height: 653px;
     width: 30%;
+    transition: 0.4 ease all;
+    transition: 0.4s ease all;
+}
+
+.card:hover {
+    background: #1B1B1B;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.03);
+    color: white;
+}
+
+.card:hover .subtitle {
+    color: white;
+}
+
+.card:hover .tit  {
+    color: white;
+}
+
+.card:hover .desc  {
+    color: white;
+}
+
+.card:hover .price  {
+    color: white;
+}
+
+.card:hover .btn {
+    background: #F9CC00;
+    border: 1px solid #F9CC00;
+    border-radius: 13px;
+    transition: 0.4s ease all;
+    color: #1B1B1B;
+}
+
+.card:hover .top::before {
+    background-image: url('../../../../public/document-white.svg');
+}
+
+.card:hover .desc-adv::before {
+    background-image: url('../../../../public/adv-white.svg');
+}
+
+.img {
+    margin-left: 50px;
+}
+
+.one::before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 25px;
+    background-size: 35px 35px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url('../../../../public/document-black.svg');
+}
+
+.two::before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 25px;
+    background-size: 35px 35px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url('../../../../public/like.svg');
+}
+
+.three::before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 25px;
+    background-size: 35px 35px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url('../../../../public/cook-black.svg');
+}
+
+.card:hover .one::before {
+    background-image: url('../../../../public/document-white.svg');
+}
+.card:hover .two::before {
+    background-image: url('../../../../public/like-white.svg');
+}
+.card:hover .three::before {
+    background-image: url('../../../../public/cook-white.svg');
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .top {
     display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.name {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    margin-left: 50px;
 }
 
-.ed {
-    margin: 0;
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 141.4%;
-    color: #1B1B1B;
+.wrap-desc {
+
 }
 
-.seconded {
-    margin: 0;
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 141.4%;
-    color: #1B1B1B;
-}
-
-.description {
+.desc {
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 14px;
@@ -96,49 +184,32 @@
     color: #424242;
 }
 
-.all {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} 
+.advantages {
 
-.service {
-    display: flex;
-    align-items: flex-start;
 }
 
-.plus {
-    margin: 0;
+.advantage {
+
 }
 
-.space {
-    min-width: 30px;
-    margin-right: 10px;
+.wrap-price {
+    margin-top: 23px;
 }
 
-.price {
+.cont {
+    height: 487px;
+}
+
+.image {
     position: absolute;
-    bottom: 90px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 141.4%;
-    color: #1B1B1B;
-}
-
-.time {
-    font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 141.4%;
-    color: #424242;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20%;
 }
 
 .btn {
-    bottom: 20px;
-    position: absolute;
+    width: 300px;
+    height: 45px;
     background: #1B1B1B;
     border: 1px solid #1B1B1B;
     border-radius: 13px;
@@ -148,34 +219,79 @@
     line-height: 20px;
     text-align: center;
     color: #F3F3F5;
-    width: 300px;
-    height: 45px;
-    display: block;
-}
-
-.line {
-    width: 300px;
-    height: 1px;
+    position: relative;
+    cursor: pointer;
     position: absolute;
-    background: #D5D5D5;
-    bottom: 173px;
+    bottom: 25px
 }
 
-.lne {
-    width: 300px;
-    height: 1px;
-    background: #D5D5D5;
-    margin-bottom: 20px;
-}
-
-.price-one {
+.btn::before {
+    content: '';
     position: absolute;
-    bottom: 115px;
-    display: flex;
-    flex-direction: column;
+    background-image: url('../../../../public/arrow-white.svg');
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20%;
+}
+
+
+.card:hover .btn::before {
+    background-image: url('../../../../public/arrow-black.svg');
+}
+
+.price {
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 20px;
     line-height: 141.4%;
     color: #1B1B1B;
+    margin: 0;
+}
+
+.desc-adv {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 20px;
+    position: relative;
+}
+.desc-adv::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-image: url('../../../../public/ok.svg');
+    background-size: 13px 13px;
+    display: inline-block;
+    margin-right: 19px;
+    position: absolute;
+    left: -25px;
+    top: 4px;
+}
+
+.subtitle {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 141.4%;
+    color: #1B1B1B;
+    margin: 0;
+}
+
+.tit {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.4%;
+    color: #1B1B1B;
+    margin: 0;
+}
+
+.line {
+    width: 300px;
+    height: 1px;
+    background: #D5D5D5;
 }

@@ -91,9 +91,13 @@
   border: none;
   outline: none;
   padding-left: 15px;
+  color: #BEC0C6;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-.select::selection {
-  background: #F3F3F5;
+
+select .option {
+  color: #BEC0C6;
 }
 
 .label {

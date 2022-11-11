@@ -1,0 +1,125 @@
+.desc {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #1B1B1B;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.input {
+    height: 50px;
+    width: 100%;
+    background: #F3F3F5;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.input::placeholder {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #BEC0C6;
+}
+
+.link {
+    text-decoration: underline;
+    color: #BEC0C6;
+}
+
+.wrap-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1B1B1B;
+    margin-bottom: 5px;
+}
+
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form {
+    padding: 50px 50px;
+    background-color: white;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    width: 490px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.container {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 50px 0px;
+    margin-top: 90px;
+}
+
+.title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #1B1B1B;
+    text-align: center;
+    margin: 0 auto 35px auto;
+}
+
+.politics {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 198%;
+    color: #BEC0C6;
+}
+
+.link-back {
+    color: #BEC0C6;
+    width: 100%;
+}
+
+.linkov {
+    color: #BEC0C6;
+    font-weight: 300;
+    font-size: 12px;
+}
+.btn {
+    color: #F9CC00;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    background: #1B1B1B;
+    border-radius: 13px;
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    cursor: pointer;
+}

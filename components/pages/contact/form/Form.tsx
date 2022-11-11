@@ -41,7 +41,7 @@ export const ContactForm = ({ className, ...props }: FormProps): JSX.Element => 
               <div className={styles['checkbox-form']}>
                 <label className={styles['label-checkbox']} >
                   <Checkbox defaultChecked sx={{
-                    color: '#1B1B1B',
+                    color: '#BEC0C6',
                     '&.Mui-checked': {
                       color: '#1B1B1B',
                     },
@@ -51,7 +51,7 @@ export const ContactForm = ({ className, ...props }: FormProps): JSX.Element => 
 
                 <label className={styles['label-checkbox']}>
                   <Checkbox sx={{
-                    color: '#1B1B1B',
+                    color: '#BEC0C6',
                     '&.Mui-checked': {
                       color: '#1B1B1B',
                     },
@@ -60,7 +60,7 @@ export const ContactForm = ({ className, ...props }: FormProps): JSX.Element => 
 
                 <label className={styles['label-checkbox']}>
                   <Checkbox sx={{
-                    color: '#1B1B1B',
+                    color: '#BEC0C6',
                     '&.Mui-checked': {
                       color: '#1B1B1B',
                     },
@@ -93,9 +93,9 @@ export const ContactForm = ({ className, ...props }: FormProps): JSX.Element => 
                 <div className={styles['wrap-input']}>
                   <label className={styles.label} htmlFor="hear">Where did you hear about us </label>
                   <Field as="select" name="hear" className={styles.select} >
-                    <option value="red">Internet</option>
-                    <option value="green">Magazine</option>
-                    <option value="blue">See</option>
+                    <option className={styles.option} value="red">Internet</option>
+                    <option className={styles.option} value="green">Magazine</option>
+                    <option className={styles.option} value="blue">See</option>
                   </Field>
                 </div>
 

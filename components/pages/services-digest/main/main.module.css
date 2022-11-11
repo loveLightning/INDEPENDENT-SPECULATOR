@@ -97,7 +97,7 @@
     background: #FFFFFF;
     border-radius: 10px;
     padding: 50px 100px;
-    
+    margin-bottom: 97px;
 }
 
 .check {
@@ -127,6 +127,7 @@
 .background {
     padding-top: 83px;
     background: #F3F3F5;
+    padding-bottom: 80px;
 }
 
 .col-title {
@@ -175,6 +176,15 @@
     height: 589px;
     left: 720px;
     top: 853px;
-
     background: #E0E0E0;
+}
+
+.testimonials {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #1B1B1B;
 }

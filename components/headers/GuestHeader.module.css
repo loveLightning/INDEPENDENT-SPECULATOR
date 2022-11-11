@@ -24,12 +24,6 @@
   margin-right: 40px;
 }
 
-.menu ul li a {
-  color: #a4a4a4;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
 .menu ul li a:hover {
   color: var(--main-yellow-color);
 }

@@ -4,6 +4,10 @@
     border-radius: 10px;
 }
 
+.panel {
+    background-color: #FAFAFA;
+}
+
 .card-left {
     transform: translateX(-500px);
 }

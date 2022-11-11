@@ -1,0 +1,49 @@
+.title {
+    margin: 0;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.line {
+    height: 3px;
+    background: linear-gradient(90deg, #F9CC00 0%, rgba(249, 204, 0, 0) 100%);
+    border-radius: 5px;
+    width: 216px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.wrap-title {
+    padding-top: 60px;
+    max-width: 597px;
+    text-align: center;
+    padding-bottom: 34px;
+    margin: 0 auto;
+}
+
+.back {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 50px 65px;
+    z-index: 1;
+    position: relative;
+}
+
+.sub-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1B1B1B;
+}
+
+.li {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #424242;
+}

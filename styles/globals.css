@@ -159,3 +159,13 @@ html.has-scroll-dragging {
   right: auto;
   bottom: 0;
 }
+
+.link {
+  color: #a4a4a4;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.link.active {
+  color: #f9cc00;
+}

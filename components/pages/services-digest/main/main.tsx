@@ -5,6 +5,8 @@ import Image from 'next/image'
 import check from '../../../../public/check.svg'
 import { firstDataDigest, secondDataDigest } from './types'
 import checkReady from '../../../../public/check-ready.svg'
+import { Testimonials } from '../../main/testimonials/Testimonials'
+import { ServiceSubscribe } from '../subscribe/subscribe'
 
 export const ServicesMainDigest = () => {
     return (
@@ -54,8 +56,11 @@ export const ServicesMainDigest = () => {
                             </div>
                         </div>
                     </div>
+                    <p className={cl.testimonials}>Testimonials</p>
+                    <Testimonials />
                 </div>
             </div>
+            <ServiceSubscribe />
         </>
     )
 }
