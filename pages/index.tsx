@@ -17,7 +17,6 @@ function Home(): JSX.Element {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const width = window.innerWidth
-      console.log(width)
       if (width > 1500) {
         startTo = 'center 30%'
       }

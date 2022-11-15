@@ -1,0 +1,30 @@
+.wrapper {
+    background: #f3f3f5;
+}
+
+.back {
+    background-color: #1B1B1B;
+    height: 513px;
+}
+
+.header {
+    display: flex;
+    gap: 52px;
+    align-items: center;
+    padding-top: 60px;
+}
+
+
+.logo-desc {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.bottom {
+    background: #f3f3f5;
+    height: 613px;
+}

@@ -14,7 +14,7 @@ interface Values {
   emailAddress: string
 }
 
-const initialValues = {
+const initialValues: Values = {
   firstName: '',
   lastName: '',
   password: '',
@@ -22,7 +22,10 @@ const initialValues = {
 }
 
 export const ServiceSubscribe = () => {
-  const onSubmit = () => { }
+
+  const onSubmit = () => {
+    console.log('csa')
+  }
 
   return (
     <div className={cl.wrapper}>

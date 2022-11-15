@@ -11,7 +11,6 @@ export const FaqQuestions = () => {
     let newArr = [...item]
     newArr[id].isActive = !newArr[id].isActive
     setItem(newArr)
-    console.log(item)
   }
 
   return (

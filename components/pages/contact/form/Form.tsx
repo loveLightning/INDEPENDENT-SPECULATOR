@@ -4,6 +4,7 @@ import cn from 'classnames';
 import { Checkbox } from '@mui/material';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import { contactSchema } from '../../../schemas/contact-validity';
+import { useRouter } from 'next/router'
 
 interface Values {
   name: string
@@ -22,8 +23,11 @@ const initialValues = {
 }
 
 export const ContactForm = ({ className, ...props }: FormProps): JSX.Element => {
+  const router = useRouter()
+
   const onSubmit = (values: Values, { setSubmitting }: FormikHelpers<Values>) => {
-    console.log(values)
+    console.log('csa')
+    router.push('/sign-up')
   }
   return (
     <div>

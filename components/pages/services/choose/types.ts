@@ -23,6 +23,7 @@ interface Props {
     btn: string
     link: string
     class: string
+    image: string
 }
 
 export const data: Props[] = [
@@ -35,7 +36,8 @@ export const data: Props[] = [
         price: ["Free"],
         btn: "View more details",
         link: '/services/digest',
-        class: 'one'
+        class: 'one',
+        image: newsPaper
     },
     {
         id: 1,
@@ -46,7 +48,8 @@ export const data: Props[] = [
         price: ["$500 / year", "$50 / month"],
         btn: "View more details",
         link: '/',
-        class: 'two'
+        class: 'two',
+        image: like
     },
     {
         id: 2,
@@ -57,6 +60,7 @@ export const data: Props[] = [
         price: ["$3,000 / year", "$1000 / quarter"],
         btn: "View more details",
         link: '/',
-        class: 'three'
-    }
+        class: 'three',
+        image: cookBlack
+    },
 ]

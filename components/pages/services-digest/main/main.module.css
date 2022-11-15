@@ -78,6 +78,8 @@
     width: 342px;
     height: 45px;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .wrapper {

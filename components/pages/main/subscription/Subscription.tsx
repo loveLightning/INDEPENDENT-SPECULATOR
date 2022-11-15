@@ -4,11 +4,14 @@ import { BaseButton } from '../../../ui/button/BaseButton';
 import { BaseLink } from '../../../ui/link/BaseLink';
 import Image from 'next/image'
 import newspaper from '../../../../public/newspaper.svg'
-import React from 'react';
+import React, { useState } from 'react';
 import { serviceAdvantage } from './Subscription.props';
 import Link from 'next/link';
+import { data } from '../../services/choose/types';
 
 export const Subscription = (): JSX.Element => {
+  const [active, setActive] = useState(0)
+
   return (
     <section className={styles.subscription}>
       <div className="container">
@@ -22,64 +25,74 @@ export const Subscription = (): JSX.Element => {
         <div className={styles.controls}>
           <ul>
             <li>
-              <BaseButton>Speculator's Digest</BaseButton>
+              <BaseButton appearance={active === 0 ? 'primary' : 'dark'} onClick={() => setActive(0)}>Speculator's Digest</BaseButton>
             </li>
             <li>
-              <BaseButton appearance="dark">My Take</BaseButton>
+              <BaseButton onClick={() => setActive(1)} appearance={active === 1 ? 'primary' : 'dark'}>My Take</BaseButton>
             </li>
             <li>
-              <BaseButton appearance="dark">
+              <BaseButton appearance={active === 2 ? 'primary' : 'dark'} onClick={() => setActive(2)} >
                 The Independent Speculator
               </BaseButton>
             </li>
           </ul>
         </div>
 
-        <div className={cn('wrapper-grid', styles.wrapperInfo)}>
-          <div className={styles.info}>
-            <div className={cn('wrapper-grid', styles.subscribtionInfo)}>
-              <div className="img">
-              <Image src={newspaper} height={46} width={36} alt="Newspapper" />
-              </div>
-              <div className={styles.wrapperTitle}>
-                <div className={styles.t1}>EDUCATION</div>
-                <div className={styles.t2}>Speculator's Digest</div>
-              </div>
-            </div>
+        {data?.map((el, id) => (
+          <>
+            {id === active && <div className={cn('wrapper-grid', styles.wrapperInfo)}>
+              <div className={styles.info}>
+                <div className={cn('wrapper-grid', styles.subscribtionInfo)}>
+                  <div className="img">
+                    <Image src={el.image} height={46} width={36} alt="Newspapper" />
+                  </div>
+                  <div className={styles.wrapperTitle}>
+                    <div className={styles.t1}>{el.subtitle}</div>
+                    <div className={styles.t2}>{el.title}</div>
+                  </div>
+                </div>
 
-            <div className={styles.pointsDescription}>
-              <div className={styles.desc}>
-                A free online educational service for investors who want to
-                become top performing speculators.
+                <div className={styles.pointsDescription}>
+                  <div className={styles.desc}>
+                    {el.desc}
+                  </div>
+
+                  <div className={styles.list}>
+                    <ul>
+                      {el.plus.map(advantage => (
+                        <li key={advantage}>{advantage}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              <div className={styles.list}>
-                <ul>
-                  {serviceAdvantage?.map(advantage => (
-                    <li key={advantage.id}>{advantage.desc}</li>
-                  ))}
-                </ul>
+              <div className={styles.subscribeControls}>
+                <div className={styles.wr}>
+
+                  {id === 0 && <div className={styles.price}>Free</div>}
+
+                  {id === 1 && <div>
+                    <p className={styles.time}>$ 50 monthly</p>
+                    <div className={styles.line}></div>
+                    <p className={styles.prices}>$ 600</p>
+                    <p className={styles.time}>$ 500 yearly</p>
+                  </div>}
+
+                  {id === 2 && <div>
+                    <p className={styles.time}>$ 1000 qtr</p>
+                    <div className={styles.line}></div>
+                    <p className={styles.prices}>$ 4000</p>
+                    <p className={styles.time}>$ 3000 yearly</p>
+                  </div>}
+                  <BaseLink arrow className={styles.link}>
+                    Subscribe
+                  </BaseLink>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className={styles.subscribeControls}>
-            <div className={styles.price}>Free</div>
-
-            <BaseButton appearance="default" className={styles.btn}>
-              Subscribe monthly
-            </BaseButton>
-            <BaseButton
-              appearance="dark"
-              className={cn(styles.btn, styles.earlyBtn)}
-            >
-              Subscribe yearly
-            </BaseButton>
-
-            <BaseLink arrow className={styles.link}>
-              Subscribe
-            </BaseLink>
-          </div>
-        </div>
+            </div>}
+          </>
+        ))}
 
         <div className={styles.question}>
           <Link href={'/'}>
