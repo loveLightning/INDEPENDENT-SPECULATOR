@@ -68,6 +68,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .label {
@@ -89,6 +90,13 @@
     border: none;
     outline: none;
     font-size: 14px;
+    border: 1px solid #F3F3F5;
+    box-sizing: border-box;
+    transition: 0.2s ease all;
+}
+.input:focus {
+    border: 1px solid #F9CC00;
+    background-color: white;
 }
 
 .input::placeholder {
@@ -142,4 +150,21 @@
     color: red;
     position: absolute;
     bottom: -20px;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.policy-desc {
+    font-family: 'Poppins';
+    font-weight: 300;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #BEC0C6;
+}
+
+.btn:disabled {
+    background-color: grey;
 }

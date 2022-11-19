@@ -8,7 +8,6 @@ export const contactSchema = yup.object().shape({
         .required('This is a required field'),
     phoneNumber: yup.string().matches(phoneRegExp, 'Phone number is not valid').required('This is a required field'),
     emailAddress: yup.string().required("This is a required field"),
-    hear: yup.string().required('This is a required field'),
     message: yup.string().required("This is a required field")
 })
 

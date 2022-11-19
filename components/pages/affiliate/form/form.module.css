@@ -7,10 +7,6 @@
     text-align: center;
 }
 
-.error {
-    color: red;
-}
-
 .input {
     height: 50px;
     width: 100%;
@@ -20,8 +16,18 @@
     border: none;
     outline: none;
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    transition: 0.2s ease all;
+    border: 1px solid #F3F3F5;
 }
 
+
+.input:focus {
+    border: 1px solid #F9CC00;
+    background-color: white;
+}
+  
 .input::placeholder {
     font-weight: 300;
     font-size: 14px;
@@ -39,6 +45,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .label {
@@ -112,7 +119,7 @@
 }
 .btn {
     color: #F9CC00;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
@@ -122,4 +129,19 @@
     height: 45px;
     margin-top: 20px;
     cursor: pointer;
+    border: none;
+}
+
+.btn:disabled {
+    background-color: grey;
+}
+
+.error {
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    line-height: 18px;
 }

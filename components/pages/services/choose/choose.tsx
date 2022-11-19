@@ -27,8 +27,8 @@ export const ServicesChoose = () => {
                       <p className={cl.desc}>{el.desc}</p>
                     </div>
                     <div className={cl.advantages}>
-                      {el?.plus?.map(adv => (
-                        <div className={cl.advantage}>
+                      {el?.plus?.map((adv, id) => (
+                        <div key={id} className={cl.advantage}>
                           <p className={cl['desc-adv']}>{adv}</p>
                         </div>
                       ))}
@@ -38,8 +38,8 @@ export const ServicesChoose = () => {
 
                   </div>
                   <div className={cl['wrap-price']}>
-                    {el?.price.map(pr => (
-                      <p className={cl.price}>{pr}</p>
+                    {el?.price.map((pr, id) => (
+                      <p key={id} className={cl.price}>{pr}</p>
                     ))}
                   </div>
                   <div>

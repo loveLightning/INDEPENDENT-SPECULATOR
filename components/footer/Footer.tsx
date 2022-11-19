@@ -14,7 +14,7 @@ export const Footer = ({ ...props }: FooterProps): JSX.Element => {
           <div className={styles.logo}>
             <Image src={logo} alt="Logo" />
           </div>
-          <div className={styles.column}>
+          <div className={cn(styles.column, styles.company)}>
             <div className={styles.title}>Company</div>
             <ul className={styles.list}>
               {footerLinks?.map(link => (
@@ -31,18 +31,18 @@ export const Footer = ({ ...props }: FooterProps): JSX.Element => {
             <div className={styles.title}>Account</div>
             <ul className={styles.list}>
               <li>
-                <Link href={'/'}>
-                  <a href="#">Log in</a>
+                <Link href={'/login'}>
+                  <a>Log in</a>
                 </Link>
               </li>
               <li>
-                <Link href={'/'}>
-                  <a href="#">Become subscriber</a>
+                <Link href={'/services'}>
+                  <a>Become subscriber</a>
                 </Link>
               </li>
               <li>
-                <Link href={'/'}>
-                  <a href="#">Affiliate</a>
+                <Link href={'/affiliate'}>
+                  <a>Affiliate</a>
                 </Link>
               </li>
             </ul>
@@ -52,13 +52,13 @@ export const Footer = ({ ...props }: FooterProps): JSX.Element => {
             <div className={styles.title}>Legal</div>
             <ul className={styles.list}>
               <li>
-                <Link href={'/'}>
+                <Link href={'/terms-and-conditions'}>
                   <a href="#">Terms & Conditions</a>
 
                 </Link>
               </li>
               <li>
-                <Link href={'/'}>
+                <Link href={'/privacy-policy'}>
                   <a href="#">Privacy policy</a>
                 </Link>
               </li>
@@ -83,11 +83,13 @@ export const Footer = ({ ...props }: FooterProps): JSX.Element => {
           <div className={styles.column}>
             <div className={styles.title}>Louis James LLC</div>
             <ul className={styles.socials}>
-              {socialDark.map(image => (
-                <li key={image.id}>
+              {socialDark.map((image, id) => (
+                <li className={styles.image} key={image.id}>
                   <Link href={image.path}>
                     <a>
-                      <Image src={image.src} alt={image.title}></Image>
+                      {id === 0 && <Image height={35} width={35} src={image.src} alt={image.title}></Image>}
+                      {id === 2 && <Image width={25} src={image.src} alt={image.title}></Image>}
+                      {id !== 2 && id !== 0 && <Image src={image.src} alt={image.title}></Image>}
                     </a>
                   </Link>
                 </li>

@@ -44,8 +44,8 @@ export const AboutWho = () => {
           </div>
           <div className={cl.right}>
             <p className={cl['title-rigth']}>Building A New Track Record</p>
-            <p className={cl.description}>The average yearly gain reported by the International Speculator during Lobo's tenure (published by Casey Research in January of 2018), was 18.5%. <Link className={cl.link} href={'/'}><a >See disclaimer</a></Link> for details. <br /> <br />
-              We are now posting a <Link className={cl.link} href={'/'}><a >new track</a></Link> record of all closed positions—no cherry picking—including evidence showing all fees and commissions. Interested parties are invited to monitor our results as they are achieved. Our clients, of course, have access to a completely transparent portfolio of all positions, including analysis of news and developments in near real time.</p>
+            <p className={cl.description}>The average yearly gain reported by the International Speculator during Lobo's tenure (published by Casey Research in January of 2018), was 18.5%. <Link className={cl.link} href={'/'}><a className='target-blank' >See disclaimer</a></Link> for details. <br /> <br />
+              We are now posting a <Link className={cl.link} href={'/'}><a className='target-blank' >new track</a></Link> record of all closed positions—no cherry picking—including evidence showing all fees and commissions. Interested parties are invited to monitor our results as they are achieved. Our clients, of course, have access to a completely transparent portfolio of all positions, including analysis of news and developments in near real time.</p>
           </div>
         </div>
         <div className={cl.separator}></div>
@@ -79,7 +79,7 @@ export const AboutWho = () => {
           </div>
           <div className={cl.right}>
             <p className={cl['title-rigth']}>Leaving No Stone Unturned</p>
-            <p className={cl.description}>For those not familiar with Lobo Tiggre’s work, due diligence is its hallmark. Hence our Twitter handle, <Link href='/'><a> @duediligenceguy.</a></Link> He’s flown more than a million miles on behalf of Casey readers (with no way to count the miles on 4×4, horse, mule, and foot).
+            <p className={cl.description}>For those not familiar with Lobo Tiggre’s work, due diligence is its hallmark. Hence our Twitter handle, <Link href='/'><a className='target-blank'> @duediligenceguy.</a></Link> He’s flown more than a million miles on behalf of Casey readers (with no way to count the miles on 4×4, horse, mule, and foot).
               <br /><br />
               Now, undeterred by falling rocks in mines, rickety third-world aircraft, scorpions, malaria outbreaks, or worse, we will continue the “Louis James” tradition of going where others dare not tread to leave no stone unturned on behalf of our clients.</p>
           </div>
@@ -92,10 +92,10 @@ export const AboutWho = () => {
           <div className={cl.right}>
             <p className={cl['title-rigth']}>Experience Matters</p>
             <p className={cl.description}>Lobo Tiggre is one of the most experienced and diligent researchers on the planet.</p>
-            <Link href='/'><a>Click here to see the full board and their bios.</a></Link>
+            <Link href='/'><a className='target-blank'>Click here to see the full board and their bios.</a></Link>
             <p>
               Our in-house team includes passionate professionals with years of experience. Despite that expertise, we are always willing to check our premises, test our ideas, probe for fatal flaws, and make use of the expertise of others who can help up deliver the best results. To this end, we have a board of advisors consisting of some of the most knowledgeable, reputable, and successful people in our industry. These include: Doug Casey, Adrian Day, Ron Parratt, Moira Smith and more. <br /><br />
-              <Link href='/'><a>Click here to see the full board and their bios.</a></Link>
+              <Link href='/'><a className='target-blank'>Click here to see the full board and their bios.</a></Link>
             </p>
           </div>
         </div>

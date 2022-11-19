@@ -17,7 +17,9 @@ export const FaqForm = () => {
   return (
     <div className={cl.wrapper}>
       <div className='container'>
-        <p className={cl.title}>Contact Us </p>
+        <div className={cl['title-wrap']}>
+          <p className={cl.title}>Contact Us </p>
+        </div>
         <div className={cl.form}>
           <Formik
             initialValues={initialValues}
@@ -43,7 +45,7 @@ export const FaqForm = () => {
                     <ErrorMessage className={cl.error} name="message" component="span" />
                   </div>
                 </div>
-                <button className={cl.btn} type="submit" disabled={!handlers.isValid}>
+                <button className={cl.btn} type="submit" disabled={!handlers.isValid || !handlers.dirty}>
                   Send
                 </button>
               </Form>

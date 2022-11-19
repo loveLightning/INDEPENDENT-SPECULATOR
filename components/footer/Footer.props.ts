@@ -18,12 +18,12 @@ export const footerLinks: Props[] = [
   {
     id: 0,
     title: 'About us',
-    path: '/'
+    path: '/about'
   },
   {
     id: 1,
     title: 'Services',
-    path: '/'
+    path: '/services'
   },
   {
     id: 2,
@@ -33,12 +33,12 @@ export const footerLinks: Props[] = [
   {
     id: 3,
     title: 'Contact',
-    path: '/'
+    path: '/contact'
   },
   {
     id: 4,
     title: 'About us',
-    path: '/'
+    path: '/about'
   },
   {
     id: 5,

@@ -95,7 +95,7 @@ export const SignUp: React.FC = () => {
                 </label>
               </div>
               <div className={cl.flex}>
-                <button className={cl.btn} type="submit" disabled={!handlers.isValid}>
+                <button className={cl.btn} type="submit" disabled={!handlers.isValid || !handlers.dirty}>
                   Next
                 </button>
                 <div className={cl.al}>

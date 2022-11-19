@@ -37,8 +37,16 @@
   outline: none;
   padding-left: 15px;
   color: #1B1B1B;
-    font-size: 14px;
+  font-size: 14px;
   line-height: 21px;
+  border: 1px solid #F3F3F5;
+  box-sizing: border-box;
+  transition: 0.2s ease all;
+}
+
+.input:focus {
+  border: 1px solid #F9CC00;
+  background-color: white;
 }
 
 .input::placeholder {
@@ -49,9 +57,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+  width: 47%;
   gap: 10px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .wrap-input-msg {
@@ -75,12 +84,20 @@
   resize: none;
   font-size: 14px;
   line-height: 21px;
+  box-sizing: border-box;
+  border: 1px solid #F3F3F5;
+  transition: 0.2s ease all;
 }
 
 .message::placeholder {
   color: #BEC0C6;
   font-size: 14px;
   line-height: 21px;
+}
+
+.message:focus {
+  border: 1px solid #F9CC00;
+  background-color: white;
 }
 
 .select {
@@ -94,6 +111,11 @@
   color: #BEC0C6;
   box-sizing: border-box;
   cursor: pointer;
+  appearance: none;
+  background-image: url("../../../../public/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 10px 7px;
 }
 
 select .option {
@@ -141,4 +163,8 @@ select .option {
   color: red;
   position: absolute;
   bottom: -20px;
+  font-size: 12px;
+  font-family: 'Poppins';
+  font-weight: 300;
+  line-height: 18px;
 }

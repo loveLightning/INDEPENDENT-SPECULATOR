@@ -5,8 +5,12 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 65px 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 75px;
+  grid-template-columns: 65px 95px 135px 140px 195px 120px;
+  grid-column-gap: 73px;
+}
+
+.wrapper .column {
+  width: 195px;
 }
 
 .wrapper .column .title {
@@ -37,6 +41,10 @@
   margin-right: 15px;
 }
 
+.image:first-child {
+  margin-right: 8px !important;
+}
+
 .wrapper .column .socials li:last-child {
   margin-right: 0;
 }
@@ -44,4 +52,6 @@
 .socials {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-left: -7px;
 }

@@ -81,7 +81,7 @@ export const ServiceSubscribe = () => {
                             color: '#1B1B1B',
                           },
                         }} />
-                        <p>I agree to the No Refunds policy, all other <Link href="/"><a className={cl.link}>Terms & Conditions</a></Link> and <Link href="/"><a className={cl.link}> Privacy Policy</a></Link></p>
+                        <p className={cl['policy-desc']}>I agree to the No Refunds policy, all other <Link href="/"><a className={cl.link}>Terms & Conditions</a></Link> and <Link href="/"><a className={cl.link}> Privacy Policy</a></Link></p>
                       </label>
 
                       <label className={cl['label-checkbox']}>
@@ -91,11 +91,11 @@ export const ServiceSubscribe = () => {
                             color: '#1B1B1B',
                           },
                         }} />
-                        <p>I am resident of Puerto Rico.</p></label>
+                        <p className={cl['policy-desc']}>I am resident of Puerto Rico.</p></label>
 
                     </div>
 
-                    <button className={cl.btn} type="submit" disabled={!handlers.isValid}>
+                    <button className={cl.btn} type="submit" disabled={!handlers.isValid || !handlers.dirty}>
                       Subscribe
                     </button>
                   </Form>

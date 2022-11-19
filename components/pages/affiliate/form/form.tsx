@@ -84,7 +84,7 @@ export const FormReg = () => {
                   apply.</p>
               </div>
 
-              <button className={cl.btn} type="submit" disabled={!handlers.isValid}>
+              <button className={cl.btn} type="submit" disabled={!handlers.isValid || !handlers.dirty}>
                 Register
               </button>
             </Form>

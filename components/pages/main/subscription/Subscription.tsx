@@ -95,7 +95,7 @@ export const Subscription = (): JSX.Element => {
         ))}
 
         <div className={styles.question}>
-          <Link href={'/'}>
+          <Link href={'/contact'}>
             <a>Got Questions?</a>
           </Link>
         </div>

@@ -169,3 +169,7 @@ html.has-scroll-dragging {
 .link.active {
   color: #f9cc00;
 }
+
+.target-blank {
+  color: #0964CB;
+}

@@ -91,12 +91,14 @@ export const ContactForm = ({ className, ...props }: FormProps): JSX.Element => 
                 <div className={styles['wrap-input']}>
                   <label className={styles.label} htmlFor="emailAddress">Email address</label>
                   <Field onBlur={handlers.handleBlur} placeholder='Enter your email address' name='emailAddress' type="text" onChange={handlers.handleChange} className={styles.input} />
-                  <ErrorMessage className={styles.error} name="emailAddress" component="span"/>
+                  <ErrorMessage className={styles.error} name="emailAddress" component="span" />
                 </div>
 
                 <div className={styles['wrap-input']}>
                   <label className={styles.label} htmlFor="hear">Where did you hear about us </label>
-                  <Field as="select" name="hear" className={styles.select} >
+                  <Field value={handlers.values.hear} as="select"
+                    onChange={handlers.handleChange}
+                    onBlur={handlers.handleBlur} name="hear" className={styles.select} >
                     <option className={styles.option} value="red">Internet</option>
                     <option className={styles.option} value="green">Magazine</option>
                     <option className={styles.option} value="blue">See</option>
@@ -107,9 +109,9 @@ export const ContactForm = ({ className, ...props }: FormProps): JSX.Element => 
               <div className={styles['wrap-input-msg']}>
                 <label className={styles.label} htmlFor="message">You message</label>
                 <Field as="textarea" onBlur={handlers.handleBlur} placeholder='Enter  your message' name='message' type="text" onChange={handlers.handleChange} className={styles.message} />
-                <ErrorMessage className={styles.error} name="message" component="span"  />
+                <ErrorMessage className={styles.error} name="message" component="span" />
               </div>
-              <button className={styles.btn} type="submit" disabled={!handlers.isValid}>
+              <button className={styles.btn} type="submit" disabled={!handlers.isValid || !handlers.dirty}>
                 Submit
               </button>
             </div >
