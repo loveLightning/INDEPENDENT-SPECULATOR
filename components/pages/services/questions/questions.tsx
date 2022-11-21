@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import cl from './questions.module.css'
-import plus from '../../../../public/plus.svg'
 import Image from 'next/image'
 import { data, TypesSelectedItems } from './types'
 import unselect from '../../../../public/minus.svg'

@@ -1,5 +1,3 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import { ContactForm } from '../components/pages/contact/form/Form';
 import { ContactWrapper } from '../components/pages/contact/wrapper/ContactWrapper';
 import { withHeaderOnlyLayout } from '../layouts/GuestLayout';

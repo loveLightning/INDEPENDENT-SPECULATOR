@@ -1,16 +1,5 @@
-import Image from 'next/image'
-
-import cookWhite from '../../../../public/cook-black.svg'
 import cookBlack from '../../../../public/cook-black.svg'
-
-import arrowWhite from '../../../../public/arrow-white.svg'
-import arrowBlack from '../../../../public/arrow-black.svg'
-
-import documentBlack from '../../../../public/document-white.svg'
 import newsPaper from '../../../../public/newspaper.svg'
-
-import ok from '../../../../public/ok.svg'
-import okWhite from '../../../../public/like-white.svg'
 import like from '../../../../public/like.svg'
 
 interface Props {
@@ -22,7 +11,6 @@ interface Props {
     price: string[]
     btn: string
     link: string
-    class: string
     image: string
 }
 
@@ -36,7 +24,6 @@ export const data: Props[] = [
         price: ["Free"],
         btn: "View more details",
         link: '/services/digest',
-        class: 'one',
         image: newsPaper
     },
     {
@@ -48,7 +35,6 @@ export const data: Props[] = [
         price: ["$500 / year", "$50 / month"],
         btn: "View more details",
         link: '/',
-        class: 'two',
         image: like
     },
     {
@@ -60,7 +46,6 @@ export const data: Props[] = [
         price: ["$3,000 / year", "$1000 / quarter"],
         btn: "View more details",
         link: '/',
-        class: 'three',
         image: cookBlack
     },
 ]

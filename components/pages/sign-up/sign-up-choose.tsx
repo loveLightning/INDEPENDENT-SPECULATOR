@@ -19,7 +19,7 @@ export const SignUpChoose = () => {
         <h2 className={cl.tite}>Choose service</h2>
         <div className={cl.all}>
           {dataServiceChoose?.map(el => (
-            <div className={cl.card}>
+            <div key={el.id} className={cl.card}>
               <div className={cl.top}>
                 {el.subtitle}
               </div>

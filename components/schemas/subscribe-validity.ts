@@ -10,6 +10,6 @@ export const subscribeSchema = yup.object().shape({
     password: yup
         .string()
         .required('This is a required field'),
-    emailAddress: yup.string().required("This is a required field"),
+    emailAddress: yup.string().required("This is a required field").email('Not valid email'),
 })
 
